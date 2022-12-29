@@ -7,6 +7,7 @@ import 'dayjs/locale/en';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import useEagerConnect from 'hooks/useEagerConnect';
+import 'antd/dist/reset.css';
 
 dayjs.extend(relativeTime);
 

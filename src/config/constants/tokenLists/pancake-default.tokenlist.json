@@ -1,0 +1,390 @@
+{
+  "name": "PancakeSwap Default List",
+  "timestamp": "2021-05-06T00:00:00Z",
+  "version": {
+    "major": 3,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "/logo.png",
+  "keywords": ["pancake", "default"],
+  "tokens": [
+    {
+      "name": "DSG",
+      "symbol": "DSG",
+      "address": "0xf8e8c2e77c47B9da858477341a649823f500c295",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSG.png"
+    },
+    {
+      "name": "DsgMDF",
+      "symbol": "DSGMDF",
+      "address": "0x73caf5f0e64047266d921d03ff28d9e2676ea585",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGMDF.png"
+    },
+    {
+      "name": "DSG MEAT FRAGMENT",
+      "symbol": "DSGMF",
+      "address": "0x80fb0f0f89c52989573d171a63f706dcac779888",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGMF.png"
+    },
+    {
+      "name": "DSG AVATAR FRAGMENT",
+      "symbol": "DSGAF",
+      "address": "0x43338D14CbcBa94605d738a6ba5A2AAD253A5E35",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGAF.png"
+    },
+    {
+      "name": "DSG AVATAR FRAGMENT",
+      "symbol": "DSGAF",
+      "address": "0xE3D5FDFBb8DafA41E0222F508a0470d21c115404",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGAF.png"
+    },
+    {
+      "name": "BOX",
+      "symbol": "BOX",
+      "address": "0x93C059bCD85ceEA3E70aB9d2225259876218f8Fb",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/BOX.png"
+    },
+    {
+      "name": "Energy",
+      "symbol": "ENERGY",
+      "address": "0xf7562ba09a99635f1420df0652ec23aad2b8b718",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/ENERGY.png"
+    },
+    {
+      "name": "Spices",
+      "symbol": "SPICES",
+      "address": "0xe0b773b980ec1de9d097b577124b35396aca532b",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/SPICES.png"
+    },
+    {
+      "name": "Ore",
+      "symbol": "ORE",
+      "address": "0xcc1454d0e42c47e80baa532c08f81be3e136c6ea",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/ORE.png"
+    },
+    {
+      "name": "DSG",
+      "symbol": "DSG",
+      "address": "0xd53e9a38bd4c6BD06cBbc3ff94f98795D027e7FF",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSG.png"
+    },
+    {
+      "name": "DsgMDF",
+      "symbol": "DSGMDF",
+      "address": "0xad28bb21575C83e3c00294fd4B15cd03D72DB539",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGMDF.png"
+    },
+    {
+      "name": "DSG MEAT FRAGMENT",
+      "symbol": "DSGMF",
+      "address": "0xA4C4740651b74920397899C9Af6C1F02753Aaf23",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGMF.png"
+    },
+    {
+      "name": "DSG",
+      "symbol": "DSG",
+      "address": "0x9A78649501BbAAC285Ea4187299471B7ad4ABD35",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSG.png"
+    },
+    {
+      "name": "DsgMDF",
+      "symbol": "DSGMDF",
+      "address": "0xbc44f2408192c2F853d953b370D449B9fdb9b1F6",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGMDF.png"
+    },
+    {
+      "name": "DSG MEAT FRAGMENT",
+      "symbol": "DSGMF",
+      "address": "0x8ee0eEBefDdc5f672680e9D3d165Bc1Dc7591919",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGMF.png"
+    },
+    {
+      "name": "BUSD",
+      "symbol": "BUSD",
+      "address": "0x0858241b08b1335d7711838d6cc9c60a72c92c4b",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/BUSD.png"
+    },
+    {
+      "name": "ADA",
+      "symbol": "ADA",
+      "address": "0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/ADA.png"
+    },
+    {
+      "name": "SYRUP",
+      "symbol": "SYRUP",
+      "address": "0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/SYRUP.png"
+    },
+    {
+      "name": "WBNB Token",
+      "symbol": "WBNB",
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/WBNB.png"
+    },
+    {
+      "name": "OK Token",
+      "symbol": "OKT",
+      "address": "0x2219845942d28716c0f7c605765fabdca1a7d9e0",
+      "chainId": 65,
+      "decimals": 18,
+      "logoURI": "/images/tokens/OKT.png"
+    },
+    {
+      "name": "USDT",
+      "symbol": "USDT",
+      "address": "0x865746a11ec78819c0067a031e9dd8d69f0b319d",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/USDT.png"
+    },
+    {
+      "name": "USDT",
+      "symbol": "USDT",
+      "address": "0x05bC09EF08BB801a249f456e158BdA400edb283A",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "/images/tokens/USDT.png"
+    },
+    {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/BUSD.png"
+    },
+    {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0x78fDF2e6c4929cE9AF0a5C93fe7F15A5aBbF0255",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "/images/tokens/BUSD.png"
+    },
+    {
+      "name": "WBNB Token",
+      "symbol": "WBNB",
+      "address": "0xD2754634e39cC8aaC7b8174af7e0552545cF63CB",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/WBNB.png"
+    },
+    {
+      "name": "Time",
+      "symbol": "TIME",
+      "address": "0xd3a03c02e3DFf87a1C42eb33705440471E4F0d63",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/TIME.svg"
+    },
+    {
+      "name": "Time",
+      "symbol": "TIME",
+      "address": "0xc7184a87D9443A52F6E578E3C0A611468536487f",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/TIME.svg"
+    },
+    {
+      "name": "Matter",
+      "symbol": "MATTER",
+      "address": "0xAd47428ed49926D5769DaCCdA27C03F1A47cEf91",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/MATTER.svg"
+    },
+    {
+      "name": "Matter",
+      "symbol": "MATTER",
+      "address": "0x6Da59176FBc92f227853E17202B62D79B82f6a40",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/MATTER.svg"
+    },
+    {
+      "name": "WBNB Token",
+      "symbol": "WBNB",
+      "address": "0x6f88390A232951A7C82C2a219a4C0FfF266Ee79c",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "/images/tokens/WBNB.png"
+    },
+    {
+      "name": "Ethereum Token",
+      "symbol": "ETH",
+      "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/ETH.png"
+    },
+    {
+      "name": "BTCB Token",
+      "symbol": "BTCB",
+      "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/BTCB.png"
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0x55d398326f99059fF775485246999027B3197955",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/USDT.png"
+    },
+    {
+      "name": "PancakeSwap Token",
+      "symbol": "CAKE",
+      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/CAKE.png"
+    },
+    {
+      "name": "Venus",
+      "symbol": "XVS",
+      "address": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/XVS.png"
+    },
+    {
+      "name": "Venus",
+      "symbol": "XVS",
+      "address": "0x997003114c52945798c48757021938c257c76a57",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/XVS.png"
+    },
+    {
+      "name": "VAI Stablecoin",
+      "symbol": "VAI",
+      "address": "0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/VAI.png"
+    },
+    {
+      "name": "USDC",
+      "symbol": "USDC",
+      "address": "0x5ebc03c246C836cDfB5DB27eAF44Ea5678D6e26b",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "/images/tokens/USDC.png"
+    },
+    {
+      "name": "VAI Stablecoin",
+      "symbol": "VAI",
+      "address": "0xB7AeaDD563299527b5d735EeffE4F5aB5c524D70",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "/images/tokens/VAI.png"
+    },
+    {
+      "name": "VAI Stablecoin",
+      "symbol": "VAI",
+      "address": "0x5b0663ecb9cdfe770214aa6324de5253f15ff2e1",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/VAI.png"
+    },
+    {
+      "name": "Pancake Bunny",
+      "symbol": "BUNNY",
+      "address": "0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/BUNNY.png"
+    },
+    {
+      "name": "SafeMoon",
+      "symbol": "SAFEMOON",
+      "address": "0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": "/images/tokens/SAFEMOON.png"
+    },
+    {
+      "name": "Alpaca",
+      "symbol": "ALPACA",
+      "address": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/ALPACA.png"
+    },
+    {
+      "name": "Belt",
+      "symbol": "BELT",
+      "address": "0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/BELT.png"
+    },
+    {
+      "name": "TokoCrypto",
+      "symbol": "TKO",
+      "address": "0x9f589e3eabe42ebC94A44727b3f3531C0c877809",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/TKO.png"
+    },
+    {
+      "name": "Nerve Finance",
+      "symbol": "NRV",
+      "address": "0x42F6f551ae042cBe50C739158b4f0CAC0Edb9096",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/NRV.png"
+    },
+    {
+      "name": "Ellipsis",
+      "symbol": "EPS",
+      "address": "0xA7f552078dcC247C2684336020c03648500C6d9F",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/tokens/EPS.png"
+    }
+  ]
+}

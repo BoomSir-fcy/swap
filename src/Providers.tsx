@@ -7,7 +7,7 @@ import { RefreshContextProvider } from 'contexts/RefreshContext'
 import { ConnectWalletProvider } from 'contexts/ConnectWalletContext';
 import { ThemeProvider } from 'styled-components'
 import { getLibrary } from 'utils/web3Core';
-import { store } from 'store';
+import { store } from 'state';
 
 const ThemeProviderWrapper: React.FC = (props) => {
   const isDark = true

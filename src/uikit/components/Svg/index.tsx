@@ -22,6 +22,16 @@ export { default as EcoSystemIcon } from "./Icons/EcoSystem";
 export { default as DsgSystemIcon } from "./Icons/DsgSystem";
 export { default as MinusIcon } from "./Icons/Minus";
 export { default as ProgressBunny } from "./Icons/ProgressBunny";
+export { default as ErrorIcon } from "./Icons/Error";
+export { default as ArrowBackIcon } from "./Icons/ArrowBack";
+export { default as CloseIcon } from "./Icons/Close";
+export { default as BinanceIcon } from "./Icons/Binance";
+export { default as ArrowUpIcon } from "./Icons/ArrowUp";
+export { default as MetamaskIcon } from "./Icons/Metamask";
+export { default as CheckmarkCircleIcon } from "./Icons/CheckmarkCircle";
+export { default as CheckmarkIcon } from "./Icons/Checkmark";
+export { default as CogIcon } from "./Icons/Cog";
+export { default as HistoryIcon } from "./Icons/History";
 
 export { default as BigRingIcon } from "./Icons/BigRing";
 export { default as Svg } from "./Svg";

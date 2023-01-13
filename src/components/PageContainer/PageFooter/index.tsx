@@ -91,7 +91,7 @@ const PageFooter: React.FC<{ setActive: React.Dispatch<React.SetStateAction<numb
                     <Box>
                         {/* <Text mb="38px" fontSize="26px" lineHeight="35px">Product</Text>
                         <ClickText mb="12px">social tribe</ClickText>
-                        <ClickText mb="12px">dsgswap</ClickText>
+                        <ClickText mb="12px">swap</ClickText>
                         <ClickText mb="12px">game</ClickText>
                         <ClickText>token</ClickText> */}
                     </Box>

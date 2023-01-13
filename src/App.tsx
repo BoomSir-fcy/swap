@@ -1,24 +1,25 @@
-import React, { lazy, Suspense, useState } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { ResetCSS, Flex, Box, useMatchBreakpoints } from 'uikit'
-import PageLayout from 'components/PageContainer/PageLayout';
-import Toast from 'components/Toast';
-import 'dayjs/locale/en';
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
-import useEagerConnect from 'hooks/useEagerConnect';
-import 'antd/dist/reset.css';
+import React, { lazy, Suspense, useState } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { ResetCSS, Flex, Box, useMatchBreakpoints } from "uikit";
+import PageLayout from "components/PageContainer/PageLayout";
+import Toast from "components/Toast";
+import "dayjs/locale/en";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+import useEagerConnect from "hooks/useEagerConnect";
+import "antd/dist/reset.css";
 
 dayjs.extend(relativeTime);
 
-const Test = lazy(() => import('./views/Test'))
+const Test = lazy(() => import("./views/Test"));
+const AddLiquidity = lazy(() => import("./views/AddLiquidity"));
 
 function App() {
   useEagerConnect();
 
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState(0);
   const { isXxs, isXs, isSm, isMd } = useMatchBreakpoints();
-  
+
   const isMobile = isXxs || isXs || isSm || isMd;
 
   return (
@@ -28,6 +29,7 @@ function App() {
         <Suspense fallback="loading...">
           <Routes>
             <Route path="/" element={<Test />} />
+            <Route path="/add" element={<AddLiquidity />} />
           </Routes>
         </Suspense>
       </PageLayout>

@@ -8,7 +8,7 @@ import {
   getSinglePoolContract,
 } from 'utils/contractHelpers'
 import { getContract } from 'utils/contract'
-import { ChainId } from 'swap-sdk'
+import { ChainId, WETH } from 'swap-sdk'
 
 // Imports below migrated from Exchange useContract.ts
 import { Contract } from '@ethersproject/contracts'
@@ -16,6 +16,7 @@ import ERC20_ABI from '../config/abi/erc20.json'
 import { ERC20_BYTES32_ABI } from '../config/abi/erc20'
 import ENS_ABI from '../config/abi/ens-registrar.json'
 import ENS_PUBLIC_RESOLVER_ABI from '../config/abi/ens-public-resolver.json'
+import WETH_ABI from '../config/abi/weth.json'
 
 /**
  * Helper hooks to get specific contracts (by ABI)
@@ -91,4 +92,9 @@ export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contrac
     }
   }
   return useContract(address, ENS_ABI, withSignerIfPossible)
+}
+
+export function useWETHContract(withSignerIfPossible?: boolean): Contract | null {
+  const { chainId } = useActiveWeb3React()
+  return useContract(chainId && WETH[chainId] ? WETH[chainId].address : undefined, WETH_ABI, withSignerIfPossible)
 }

@@ -3,10 +3,7 @@ import { ThunkAction } from "redux-thunk";
 import { AnyAction } from "@reduxjs/toolkit";
 import { PoolsState } from "./pools/types";
 import { CurrencyAmount, Price, Token, TokenAmount } from "swap-sdk";
-
-export interface State {
-  pools: PoolsState;
-}
+import { State } from "state";
 
 export interface AppStore {
   isDark: boolean;
@@ -101,6 +98,51 @@ export enum PolyDataIndexStatus {
   NEED_QUERY,
   NEED_REFRESH,
   LOADED,
+}
+
+type uint256 = number
+type uint8 = number
+type address = string
+export interface TradePool {
+  pid: uint256
+  pair: address
+  allocPoint: uint256
+  lastRewardBlock: uint256
+  rewardsPerBlock: uint256
+  accRewardPerShare: uint256
+  allocRewardAmount: uint256
+  accRewardAmount: uint256
+  quantity: uint256
+  accQuantity: uint256
+  token0: address
+  symbol0: string
+  name0: string
+  decimals0: uint8
+  token1: address
+  symbol1: string
+  name1: string
+  decimals1: uint8
+  totalAmount: uint256
+  userData?: {
+    quantity: uint256
+    accQuantity: uint256
+    unclaimedRewards: uint256
+    accRewardAmount: uint256
+  }
+}
+
+export interface TradePoolUserData {
+  isLoading: boolean
+  pendingRewards: number
+}
+
+export interface TradePoolsState {
+  data: TradePool[]
+  userDataLoaded: boolean
+  poolDataLoaded: boolean
+  totalAllocPoint: null | number
+  totalQuantityAllocPoint: null | number
+  userData: TradePoolUserData
 }
 
 export type AppThunk<ReturnType = void> = ThunkAction<

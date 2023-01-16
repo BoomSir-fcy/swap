@@ -35,3 +35,11 @@ export const getSinglePool = () => {
 export const getOracleAddress = () => {
   return getAddress(addresses.oracle)
 }
+
+export const getTradingPoolAddress = () => {
+  return getAddress(addresses.tradingPool)
+}
+
+export const getCakeVaultAddress = () => {
+  return getAddress(addresses.cakeVault)
+}

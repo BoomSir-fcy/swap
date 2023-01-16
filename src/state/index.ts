@@ -1,5 +1,5 @@
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import { useSelector } from "react-redux";
+import { configureStore } from "@reduxjs/toolkit";
+import { useDispatch, useSelector } from "react-redux";
 import walletReduce from "./wallet/reducer";
 import type { WalletState } from "./wallet/type";
 import poolsReduce from "./pools";
@@ -11,8 +11,10 @@ import user, { UserState } from "./user/reducer";
 import swap, { SwapState } from "./swap/reducer";
 import transactions, { TransactionState } from "./transactions/reducer";
 import mint, { MintState } from "./mint/reducer";
+import tradingPoolReducer from './tradingPool'
+import { TradePoolsState } from "./types";
 
-export interface Store {
+export interface State {
   test: any;
   pools: PoolsState;
   wallet: WalletState;
@@ -23,6 +25,7 @@ export interface Store {
   swap: SwapState;
   transactions: TransactionState;
   mint: MintState;
+  tradingPool:TradePoolsState;
 }
 const PERSISTED_KEYS: string[] = ["user", "transactions", "lists"];
 
@@ -30,6 +33,7 @@ export const store = configureStore({
   reducer: {
     pools: poolsReduce,
     wallet: walletReduce,
+    tradingPool: tradingPoolReducer,
     multicall,
     application,
     user,
@@ -44,11 +48,12 @@ export const store = configureStore({
 export const storeAction = {};
 
 export function useStore<TSelected>(
-  selector: (state: Store) => TSelected,
+  selector: (state: State) => TSelected,
   equalityFn?: (left: TSelected, right: TSelected) => boolean
 ) {
-  return useSelector<Store, TSelected>(selector, equalityFn);
+  return useSelector<State, TSelected>(selector, equalityFn);
 }
 
 export type AppDispatch = typeof store.dispatch;
 export type AppState = ReturnType<typeof store.getState>;
+export const useAppDispatch = () => useDispatch()

@@ -4,7 +4,7 @@ import { useWeb3React } from '@web3-react/core'
 import useRefresh from 'hooks/useRefresh'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchSinglePoolDataAsync } from './thunks'
-import { State } from '../types'
+import { State } from 'state'
 
 export const useFetchSinglePool = () => {
   const dispatch = useDispatch()

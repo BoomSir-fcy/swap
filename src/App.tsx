@@ -12,11 +12,13 @@ import {
   RedirectDuplicateTokenIds,
   RedirectOldAddLiquidityPathStructure,
 } from "views/AddLiquidity/redirects";
+import { RedirectToSwap } from "views/Swap/redirects";
 
 dayjs.extend(relativeTime);
 
 const Test = lazy(() => import("./views/Test"));
 const AddLiquidity = lazy(() => import("./views/AddLiquidity"));
+const Swap = lazy(() => import("./views/Swap"));
 
 function App() {
   useEagerConnect();
@@ -33,6 +35,10 @@ function App() {
         <Suspense fallback="loading...">
           <Routes>
             <Route path="/" element={<Test />} />
+
+            <Route path="/swap" element={<Swap />} />
+            <Route path="/swap/:outputCurrency" element={<RedirectToSwap />} />
+
             <Route path="/add" element={<AddLiquidity />} />
             <Route
               path="/add/:currencyIdA"

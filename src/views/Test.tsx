@@ -50,6 +50,14 @@ const Test = () => {
         <Button
           type="primary"
           onClick={() => {
+            navigate(`/Swap`);
+          }}
+        >
+          兑换
+        </Button>
+        <Button
+          type="primary"
+          onClick={() => {
             navigate(`/add`);
           }}
         >

@@ -33,4 +33,12 @@ export default {
     56: '0x89690BbC6553c407608D75dCA7C623A5373D3D79',
     97: '0xD381c10DE700B087649C67B92d68b2A647b51f28'
   },
+  tradingPool: {
+    56: '0x14A495B23a6fe7938AE5da73CfA153b5E67f2681',
+    97: '0xa24bc8fa9ee25dba4d4879d6b56424b87662b721',
+  },
+  cakeVault: {
+    56: '0xa80240Eb5d7E05d3F250cF000eEc0891d00b51CC',
+    97: '',
+  },
 };

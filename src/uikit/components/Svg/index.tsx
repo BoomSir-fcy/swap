@@ -1,4 +1,5 @@
 export { default as AddIcon } from "./Icons/Add";
+export { default as AutoRenewIcon } from "./Icons/AutoRenew";
 export { default as ChevronDownIcon } from "./Icons/ChevronDown";
 export { default as ChevronUpIcon } from "./Icons/ChevronUp";
 export { default as HelpIcon } from "./Icons/Help";
@@ -32,6 +33,9 @@ export { default as CheckmarkCircleIcon } from "./Icons/CheckmarkCircle";
 export { default as CheckmarkIcon } from "./Icons/Checkmark";
 export { default as CogIcon } from "./Icons/Cog";
 export { default as HistoryIcon } from "./Icons/History";
+export { default as TradeIcon } from "./Icons/Trade";
+export { default as ChevronRightIcon } from "./Icons/ChevronRight";
+export { default as ArrowDownIcon } from "./Icons/ArrowDown";
 
 export { default as BigRingIcon } from "./Icons/BigRing";
 export { default as Svg } from "./Svg";

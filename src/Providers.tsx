@@ -1,18 +1,18 @@
-import React from 'react'
-import { Provider } from 'react-redux';
-import { Web3ReactProvider } from '@web3-react/core'
-import { light, dark } from 'uikit'
-import { ToastsProvider, LanguageProvider } from 'contexts';
-import { RefreshContextProvider } from 'contexts/RefreshContext'
-import { ConnectWalletProvider } from 'contexts/ConnectWalletContext';
-import { ThemeProvider } from 'styled-components'
-import { getLibrary } from 'utils/web3Core';
-import { store } from 'state';
+import React from "react";
+import { Provider } from "react-redux";
+import { Web3ReactProvider } from "@web3-react/core";
+import { light, dark, ModalProvider } from "uikit";
+import { ToastsProvider, LanguageProvider } from "contexts";
+import { RefreshContextProvider } from "contexts/RefreshContext";
+import { ConnectWalletProvider } from "contexts/ConnectWalletContext";
+import { ThemeProvider } from "styled-components";
+import { getLibrary } from "utils/web3Core";
+import { store } from "state";
 
 const ThemeProviderWrapper: React.FC = (props) => {
-  const isDark = true
-  return <ThemeProvider theme={isDark ? dark : light} {...props}/>
-}
+  const isDark = true;
+  return <ThemeProvider theme={isDark ? dark : light} {...props} />;
+};
 
 const Providers: React.FC = ({ children }) => {
   return (
@@ -23,7 +23,7 @@ const Providers: React.FC = ({ children }) => {
             <ToastsProvider>
               <LanguageProvider>
                 <ConnectWalletProvider>
-                  {children}
+                  <ModalProvider>{children}</ModalProvider>
                 </ConnectWalletProvider>
               </LanguageProvider>
             </ToastsProvider>
@@ -31,7 +31,7 @@ const Providers: React.FC = ({ children }) => {
         </ThemeProviderWrapper>
       </Provider>
     </Web3ReactProvider>
-  )
-}
+  );
+};
 
-export default Providers
+export default Providers;

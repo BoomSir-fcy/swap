@@ -5,6 +5,7 @@ import useActiveWeb3React from "hooks/useActiveWeb3React";
 import { ComponentsWrapper, PageContainer } from "components/PageContainer";
 import styled from "styled-components";
 import { Button, Drawer, message, notification } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const Content = styled(Box)`
   padding-top: 100px;
@@ -18,6 +19,7 @@ const Test = () => {
   const { account, chainId } = useActiveWeb3React();
   const [open, setOpen] = useState(false);
   const [api, contextHolder] = notification.useNotification();
+  const navigate = useNavigate();
 
   const showDrawer = () => {
     setOpen(true);
@@ -44,6 +46,14 @@ const Test = () => {
         </Button>
         <Button type="primary" onClick={() => message.success("这是一条消息")}>
           message
+        </Button>
+        <Button
+          type="primary"
+          onClick={() => {
+            navigate(`/add`);
+          }}
+        >
+          添加流动性
         </Button>
         <Button
           type="primary"

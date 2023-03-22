@@ -16,6 +16,7 @@ const StyledPage = styled.div`
   /* background: ${({ theme }) => theme.colors.gradients.bubblegum}; */
   background: no-repeat bottom right;
   background-size: cover;
+  padding-top: 60px;
 
   background-image: ${({ theme }) =>
     theme.isDark ? 'url("/images/page-bg/dark-1.jpg")' : 'url("/images/page-bg/light-1.jpg")'};
@@ -26,12 +27,12 @@ const StyledPage = styled.div`
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
-    padding: 24px;
+    /* padding: 24px; */
     padding-bottom: 0;
   }
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    padding-top: 32px;
+    /* padding-top: 32px; */
     /* min-height: calc(100vh - 64px); */
   }
 `

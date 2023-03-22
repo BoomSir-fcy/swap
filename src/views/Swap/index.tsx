@@ -65,7 +65,7 @@ import {
 import CircleLoader from "../../components/Loader/CircleLoader";
 import Page from "../Page";
 import SwapWarningModal from "./components/SwapWarningModal";
-import TradingTips from "./components/TradingTips";
+// import TradingTips from "./components/TradingTips";
 import { usePloyCallData } from "./hooks/usePloyCallData";
 
 export default function Swap() {
@@ -681,8 +681,7 @@ export default function Swap() {
 
   return (
     <Page>
-      {/* TradingTips */}
-      <TradingTips />
+      {/* <TradingTips /> */}
       <AppBody>
         <AppHeader
           title={t("Exchange")}

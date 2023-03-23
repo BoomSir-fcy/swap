@@ -27,9 +27,9 @@ export default function CurrencyLogo({
     currency,
   })
 
-  if (currency === ETHER) {
-    return <BinanceIcon width={size} style={style} />
-  }
+  // if (currency === ETHER) {
+  //   return <BinanceIcon width={size} style={style} />
+  // }
 
   return <StyledLogo size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />
 }

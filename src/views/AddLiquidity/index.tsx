@@ -365,7 +365,7 @@ export default function AddLiquidity() {
           navigate(`/add/${newCurrencyIdB}`);
         }
       } else {
-        navigate(`/add/${currencyIdA || "BNB"}/${newCurrencyIdB}`);
+        navigate(`/add/${currencyIdA || ETHER.symbol}/${newCurrencyIdB}`);
       }
     },
     [currencyIdA, currencyIdB]

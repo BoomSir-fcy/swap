@@ -8,7 +8,10 @@
   },
   "tags": {},
   "logoURI": "/logo.png",
-  "keywords": ["pancake", "default"],
+  "keywords": [
+    "pancake",
+    "default"
+  ],
   "tokens": [
     {
       "name": "DSG",
@@ -321,6 +324,14 @@
       "chainId": 80001,
       "decimals": 18,
       "logoURI": "/images/tokens/VAI.png"
+    },
+    {
+      "name": "WETH",
+      "symbol": "WETH",
+      "address": "0x96d6565e7CA693c1424A151dc60Bd5CBa2200cD2",
+      "chainId": 80001,
+      "decimals": 18,
+      "logoURI": "https://aavegotchi.com/images/matokens/maWETH.svg"
     },
     {
       "name": "VAI Stablecoin",

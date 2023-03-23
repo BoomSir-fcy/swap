@@ -17,6 +17,7 @@ import { ERC20_BYTES32_ABI } from '../config/abi/erc20'
 import ENS_ABI from '../config/abi/ens-registrar.json'
 import ENS_PUBLIC_RESOLVER_ABI from '../config/abi/ens-public-resolver.json'
 import WETH_ABI from '../config/abi/weth.json'
+import { MULTICALL_ABI, MULTICALL_NETWORKS } from 'config/constants/multicall'
 
 /**
  * Helper hooks to get specific contracts (by ABI)
@@ -62,7 +63,8 @@ export function useENSResolverContract(address: string | undefined, withSignerIf
 
 export function useMulticallContract(): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useMemo(() => getMulticallContract(), [chainId])
+  // return useMemo(() => getMulticallContract(), [chainId])
+  return useContract(chainId && MULTICALL_NETWORKS[chainId], MULTICALL_ABI, false)
 }
 
 export const useTimeShop = () => {

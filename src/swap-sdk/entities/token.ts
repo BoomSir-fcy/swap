@@ -74,10 +74,10 @@ export const WETH = {
   ),
   [ChainId.MATIC_TESTNET]: new Token(
     ChainId.MATIC_TESTNET,
-    '0x6f88390A232951A7C82C2a219a4C0FfF266Ee79c',
+    '0x96d6565e7CA693c1424A151dc60Bd5CBa2200cD2',
     18,
-    'WOKT',
-    'Wrapped WOKT',
+    'WETH',
+    'Wrapped WETH',
   ),
 }
 

@@ -19,6 +19,7 @@ export * from "./components/Checkbox";
 export * from "./components/ButtonMenu";
 export * from "./components/Toggle";
 export * from "./components/NotificationDot";
+export * from './components/Dots';
 
 // Hooks
 export * from "./hooks";

@@ -13,6 +13,7 @@ import {
   RedirectOldAddLiquidityPathStructure,
 } from "views/AddLiquidity/redirects";
 import { RedirectToSwap } from "views/Swap/redirects";
+import { usePollBlockNumber } from "state/block/hooks";
 
 dayjs.extend(relativeTime);
 
@@ -21,8 +22,11 @@ const AddLiquidity = lazy(() => import("./views/AddLiquidity"));
 const Swap = lazy(() => import("./views/Swap"));
 
 function App() {
-  useEagerConnect();
-
+  usePollBlockNumber()
+  useEagerConnect() // 自动连接有bug
+  // useFetchProfile()
+  // usePollCoreFarmData()
+  // useFetchAdditionalRates()
   const [active, setActive] = useState(0);
   const { isXxs, isXs, isSm, isMd } = useMatchBreakpoints();
 

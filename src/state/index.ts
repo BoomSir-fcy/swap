@@ -11,8 +11,9 @@ import user, { UserState } from "./user/reducer";
 import swap, { SwapState } from "./swap/reducer";
 import transactions, { TransactionState } from "./transactions/reducer";
 import mint, { MintState } from "./mint/reducer";
-import tradingPoolReducer from './tradingPool'
-import { TradePoolsState } from "./types";
+import tradingPoolReducer from "./tradingPool";
+import { BlockState, TradePoolsState } from "./types";
+import blockReducer from "./block";
 
 export interface State {
   test: any;
@@ -25,7 +26,8 @@ export interface State {
   swap: SwapState;
   transactions: TransactionState;
   mint: MintState;
-  tradingPool:TradePoolsState;
+  tradingPool: TradePoolsState;
+  block: BlockState;
 }
 const PERSISTED_KEYS: string[] = ["user", "transactions", "lists"];
 
@@ -34,6 +36,7 @@ export const store = configureStore({
     pools: poolsReduce,
     wallet: walletReduce,
     tradingPool: tradingPoolReducer,
+    block: blockReducer,
     multicall,
     application,
     user,
@@ -56,4 +59,4 @@ export function useStore<TSelected>(
 
 export type AppDispatch = typeof store.dispatch;
 export type AppState = ReturnType<typeof store.getState>;
-export const useAppDispatch = () => useDispatch()
+export const useAppDispatch = () => useDispatch();

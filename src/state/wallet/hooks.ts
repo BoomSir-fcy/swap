@@ -331,7 +331,6 @@ export function useBNBBalances(uncheckedAddresses?: (string | undefined)[]): {
     "getEthBalance",
     addresses.map((address) => [address])
   );
-    console.log(addresses,results);
     
   return useMemo(
     () =>
@@ -365,7 +364,6 @@ export function useCurrencyBalances(
     [currencies]
   );
   const ethBalance = useBNBBalances(containsBNB ? [account] : []);
-  // console.log(ethBalance,containsBNB);
   
   return useMemo(
     () =>
@@ -405,7 +403,6 @@ export function useTokenBalancesWithLoadingIndicator(
     "balanceOf",
     [address]
   );
-  console.log(balances);
 
   const anyLoading: boolean = useMemo(
     () => balances.some((callState) => callState.loading),

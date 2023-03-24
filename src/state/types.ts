@@ -145,6 +145,12 @@ export interface TradePoolsState {
   userData: TradePoolUserData
 }
 
+
+export interface BlockState {
+  currentBlock: number
+  initialBlock: number
+}
+
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
   State,

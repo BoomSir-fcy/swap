@@ -1,5 +1,24 @@
 import { ChainId, Token } from "swap-sdk";
 
+export const GPD: { [chainId: number]: Token } = {
+  [ChainId.MATIC_TESTNET]: new Token(
+    ChainId.MATIC_TESTNET,
+    "0x26613b05D23C808aCf7D47981444de4bbd2CfA4a",
+    6,
+    "GPD",
+    "Gpd"
+  ),
+};
+export const PGD: { [chainId: number]: Token } = {
+  [ChainId.MATIC_TESTNET]: new Token(
+    ChainId.MATIC_TESTNET,
+    "0x4F9e850fFd2e7F1A2a472847De443d062c47aEB3",
+    1,
+    "PGD",
+    "PGD"
+  ),
+};
+
 export const CAKE: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,

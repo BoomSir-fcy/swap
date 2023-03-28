@@ -88,30 +88,6 @@
     {
       "name": "DSG",
       "symbol": "DSG",
-      "address": "0xd53e9a38bd4c6BD06cBbc3ff94f98795D027e7FF",
-      "chainId": 80001,
-      "decimals": 18,
-      "logoURI": "https://dsgmetaverse.com/images/tokens/DSG.png"
-    },
-    {
-      "name": "DsgMDF",
-      "symbol": "DSGMDF",
-      "address": "0xad28bb21575C83e3c00294fd4B15cd03D72DB539",
-      "chainId": 80001,
-      "decimals": 18,
-      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGMDF.png"
-    },
-    {
-      "name": "DSG MEAT FRAGMENT",
-      "symbol": "DSGMF",
-      "address": "0xA4C4740651b74920397899C9Af6C1F02753Aaf23",
-      "chainId": 80001,
-      "decimals": 18,
-      "logoURI": "https://dsgmetaverse.com/images/tokens/DSGMF.png"
-    },
-    {
-      "name": "DSG",
-      "symbol": "DSG",
       "address": "0x9A78649501BbAAC285Ea4187299471B7ad4ABD35",
       "chainId": 56,
       "decimals": 18,
@@ -395,6 +371,22 @@
       "address": "0xA7f552078dcC247C2684336020c03648500C6d9F",
       "chainId": 56,
       "decimals": 18,
+      "logoURI": "/images/tokens/EPS.png"
+    },
+    {
+      "name": "gpd",
+      "symbol": "GPD",
+      "address": "0x26613b05D23C808aCf7D47981444de4bbd2CfA4a",
+      "chainId": 80001,
+      "decimals": 6,
+      "logoURI": "/images/tokens/EPS.png"
+    },
+    {
+      "name": "PGD",
+      "symbol": "PGD",
+      "address": "0x4F9e850fFd2e7F1A2a472847De443d062c47aEB3",
+      "chainId": 80001,
+      "decimals": 1,
       "logoURI": "/images/tokens/EPS.png"
     }
   ]

@@ -12,6 +12,8 @@ import tokens, {
   DSG,
   VAI,
   XVS,
+  GPD,
+  PGD,
 } from "./tokens";
 
 // swap router swap路由
@@ -63,7 +65,7 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[];
 };
 
-// used to construct intermediary pairs for trading
+// used to construct intermediary pairs for trading 用于构建交易的交易对
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     WETH[ChainId.MAINNET],
@@ -138,8 +140,10 @@ export const SUGGESTED_BASES: ChainTokenList = {
   ],
   [ChainId.MATIC_TESTNET]: [
     WETH[ChainId.MATIC_TESTNET],
-    BUSD[ChainId.MATIC_TESTNET],
-    VAI[ChainId.MATIC_TESTNET],
+    GPD[ChainId.MATIC_TESTNET],
+    PGD[ChainId.MATIC_TESTNET],
+    // BUSD[ChainId.MATIC_TESTNET],
+    // VAI[ChainId.MATIC_TESTNET],
   ],
   [ChainId.MATIC_MAINNET]: [
     WETH[ChainId.MATIC_MAINNET],

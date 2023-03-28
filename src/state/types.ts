@@ -100,57 +100,59 @@ export enum PolyDataIndexStatus {
   LOADED,
 }
 
-type uint256 = number
-type uint8 = number
-type address = string
+type uint256 = number;
+type uint8 = number;
+type address = string;
 export interface TradePool {
-  pid: uint256
-  pair: address
-  allocPoint: uint256
-  lastRewardBlock: uint256
-  rewardsPerBlock: uint256
-  accRewardPerShare: uint256
-  allocRewardAmount: uint256
-  accRewardAmount: uint256
-  quantity: uint256
-  accQuantity: uint256
-  token0: address
-  symbol0: string
-  name0: string
-  decimals0: uint8
-  token1: address
-  symbol1: string
-  name1: string
-  decimals1: uint8
-  totalAmount: uint256
+  pid: uint256;
+  pair: address;
+  allocPoint: uint256;
+  lastRewardBlock: uint256;
+  rewardsPerBlock: uint256;
+  accRewardPerShare: uint256;
+  allocRewardAmount: uint256;
+  accRewardAmount: uint256;
+  quantity: uint256;
+  accQuantity: uint256;
+  token0: address;
+  symbol0: string;
+  name0: string;
+  decimals0: uint8;
+  token1: address;
+  symbol1: string;
+  name1: string;
+  decimals1: uint8;
+  totalAmount: uint256;
   userData?: {
-    quantity: uint256
-    accQuantity: uint256
-    unclaimedRewards: uint256
-    accRewardAmount: uint256
-  }
+    quantity: uint256;
+    accQuantity: uint256;
+    unclaimedRewards: uint256;
+    accRewardAmount: uint256;
+  };
 }
 
 export interface TradePoolUserData {
-  isLoading: boolean
-  pendingRewards: number
+  isLoading: boolean;
+  pendingRewards: number;
 }
 
 export interface TradePoolsState {
-  data: TradePool[]
-  userDataLoaded: boolean
-  poolDataLoaded: boolean
-  totalAllocPoint: null | number
-  totalQuantityAllocPoint: null | number
-  userData: TradePoolUserData
+  data: TradePool[];
+  userDataLoaded: boolean;
+  poolDataLoaded: boolean;
+  totalAllocPoint: null | number;
+  totalQuantityAllocPoint: null | number;
+  userData: TradePoolUserData;
 }
-
 
 export interface BlockState {
-  currentBlock: number
-  initialBlock: number
+  currentBlock: number;
+  initialBlock: number;
 }
 
+export interface FarmsState {
+  levelRates: number[];
+}
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
   State,

@@ -16,6 +16,9 @@ import { ConnectWalletButton } from "components/ConnectWalletButton";
 import { useWeb3React } from "@web3-react/core";
 import useAuth from "hooks/useAuth";
 import { shortenAddress } from "utils/contract";
+import LangMenu from "components/langMenu";
+import { useTranslation } from "contexts";
+import { languagesOptions } from "config/localization";
 
 const HeaderWrapper = styled(Flex)`
   /* width: 80%; */
@@ -67,6 +70,7 @@ const PageHeader: React.FC<{
   const { toastInfo } = useToast();
   const { account } = useWeb3React();
   const { signOut } = useAuth();
+  const { currentLanguage, setLanguage, t } = useTranslation();
 
   const goTop = () => {
     setActive(0);
@@ -94,20 +98,29 @@ const PageHeader: React.FC<{
           <LogoWithTextIconStyled width="50px" />
         </Link>
       )}
-      {account ? (
-        <Flex alignItems="center">
-          <Text mr="20px">address: {shortenAddress(account)}</Text>
-          <Button
-            onClick={() => {
-              signOut();
-            }}
-          >
-            登出
-          </Button>
-        </Flex>
-      ) : (
-        <ConnectWalletButton />
-      )}
+      <Flex justifyContent="space-between" alignItems="center">
+        {account ? (
+          <Flex alignItems="center">
+            <Text mr="20px">address: {shortenAddress(account)}</Text>
+            <Button
+              onClick={() => {
+                signOut();
+              }}
+            >
+              登出
+            </Button>
+          </Flex>
+        ) : (
+          <ConnectWalletButton />
+        )}
+        <Box ml="24px">
+          <LangMenu
+            currentLang={currentLanguage.language}
+            langs={languagesOptions}
+            setLang={(val: any) => setLanguage(val.value)}
+          />
+        </Box>
+      </Flex>
     </HeaderWrapper>
   );
 };

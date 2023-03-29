@@ -27,7 +27,3 @@ export const DEFAULT_TOKEN_DECIMAL = BIG_TEN.pow(18)
 
 export const BSC_BLOCK_TIME = 3
 export const BLOCKS_PER_YEAR = new BigNumber((60 / BSC_BLOCK_TIME) * 60 * 24 * 365) // 10512000
-
-export const APP_OPEN_TIMESTAMP = 1640606400000
-
-export const METATIME_SOCIAL_LINK = 'https://app.metatime.social/'

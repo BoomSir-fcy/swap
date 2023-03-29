@@ -9,9 +9,6 @@ import {
   Box,
 } from "uikit";
 import { Link, useParams, useLocation } from "react-router-dom";
-import { ClickText } from "components/PartText";
-import { useToast } from "hooks/useToast";
-import { APP_OPEN_TIMESTAMP, METATIME_SOCIAL_LINK } from "config";
 import { ConnectWalletButton } from "components/ConnectWalletButton";
 import { useWeb3React } from "@web3-react/core";
 import useAuth from "hooks/useAuth";
@@ -35,31 +32,11 @@ const HeaderWrapper = styled(Flex)`
   ${({ theme }) => theme.mediaQueriesSize.paddingPage};
 `;
 
-const HeaderLink = styled(Flex)`
-  color: ${({ theme }) => theme.colors.text};
-`;
-
-interface LinksData {
-  lable: string;
-  path: string;
-  swiperTo: number;
-}
 
 const LogoWithTextIconStyled = styled(LogoWithTextIcon)`
   cursor: pointer;
 `;
 
-const ClickTextStyled = styled(ClickText)`
-  font-size: 16px;
-  ${({ theme }) => theme.mediaQueries.xl} {
-    font-size: 20px;
-  }
-  ${({ theme }) => theme.mediaQueries.xxl} {
-    font-size: 22px;
-  }
-`;
-
-const nowTime = new Date().getTime();
 
 const PageHeader: React.FC<{
   setActive: React.Dispatch<React.SetStateAction<number>>;
@@ -67,7 +44,6 @@ const PageHeader: React.FC<{
   isMobile: boolean;
 }> = ({ isMobile, active, setActive }) => {
   const { pathname } = useLocation();
-  const { toastInfo } = useToast();
   const { account } = useWeb3React();
   const { signOut } = useAuth();
   const { currentLanguage, setLanguage, t } = useTranslation();
@@ -80,14 +56,6 @@ const PageHeader: React.FC<{
       behavior: "smooth",
     });
   };
-
-  const handleSoon = useCallback(() => {
-    toastInfo("Coming Soon");
-  }, [toastInfo]);
-
-  const isAppOpen = useMemo(() => {
-    return nowTime > APP_OPEN_TIMESTAMP;
-  }, []);
 
   return (
     <HeaderWrapper justifyContent="space-between" alignItems="center">

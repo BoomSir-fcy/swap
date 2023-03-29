@@ -45,7 +45,7 @@ const LangSelector: React.FC<Props> = ({
 
   return (
     <Dropdown menu={{ items, onClick }} placement="topRight">
-      <Button>{currentLang}</Button>
+      <Button ghost size='large'>{currentLang}</Button>
     </Dropdown>
   );
 };

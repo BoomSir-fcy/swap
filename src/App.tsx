@@ -23,7 +23,8 @@ const Test = lazy(() => import("./views/Test"));
 const AddLiquidity = lazy(() => import("./views/AddLiquidity"));
 const Swap = lazy(() => import("./views/Swap"));
 const Liquidity = lazy(() => import("./views/Liquidity"));
-const RemoveLiquidity = lazy(() => import('./views/RemoveLiquidity'))
+const RemoveLiquidity = lazy(() => import("./views/RemoveLiquidity"));
+const PoolFinder = lazy(() => import('./views/PoolFinder'))
 
 function App() {
   usePollBlockNumber();
@@ -42,7 +43,7 @@ function App() {
         <Suspense fallback="loading...">
           <Routes>
             <Route path="/" element={<Test />} />
-
+            <Route path="/find" element={<PoolFinder />} />
             <Route path="/swap" element={<Swap />} />
             <Route path="/swap/:outputCurrency" element={<RedirectToSwap />} />
 

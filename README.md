@@ -6,6 +6,7 @@ MATIC_TESTNET
 'https://rpc-mumbai.maticvigil.com/',
 'https://polygon-mumbai.infura.io/v3/330472ed44dd4692a16dfcb4cc41f122',
 
+====
     BNB
     https://nodes.pancakeswap.com/
     'https://bsc-dataseed1.ninicoin.io',

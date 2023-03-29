@@ -15,6 +15,7 @@ import {
 import { RedirectToSwap } from "views/Swap/redirects";
 import { usePollBlockNumber } from "state/block/hooks";
 import { useFetchAdditionalRates } from "state/farms/hook";
+import RedirectOldRemoveLiquidityPathStructure from "views/RemoveLiquidity/redirects";
 
 dayjs.extend(relativeTime);
 
@@ -22,6 +23,7 @@ const Test = lazy(() => import("./views/Test"));
 const AddLiquidity = lazy(() => import("./views/AddLiquidity"));
 const Swap = lazy(() => import("./views/Swap"));
 const Liquidity = lazy(() => import("./views/Liquidity"));
+const RemoveLiquidity = lazy(() => import('./views/RemoveLiquidity'))
 
 function App() {
   usePollBlockNumber();
@@ -52,6 +54,14 @@ function App() {
             <Route
               path="/add/:currencyIdA/:currencyIdB"
               element={<RedirectDuplicateTokenIds />}
+            />
+            <Route
+              path="/remove/:tokens"
+              element={<RedirectOldRemoveLiquidityPathStructure />}
+            />
+            <Route
+              path="/remove/:currencyIdA/:currencyIdB"
+              element={<RemoveLiquidity />}
             />
             <Route path="/liquidity" element={<Liquidity />} />
           </Routes>

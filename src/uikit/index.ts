@@ -10,6 +10,7 @@ export * from "./components/Svg";
 export * from "./components/Text";
 export * from "./components/Input";
 export * from "./components/Progress";
+export * from "./components/Slider";
 export * from "./components/Spinner";
 export * from "./components/Empty";
 export * from "./components/Message";

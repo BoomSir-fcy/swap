@@ -34,8 +34,6 @@ const TransactionsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
 
   const sortedRecentTransactions = useMemo(() => {
     const txs = Object.values(allTransactions)
-    console.log(allTransactions);
-    
     return txs.filter(isTransactionRecent).sort(newTransactionsFirst)
   }, [allTransactions])
 

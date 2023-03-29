@@ -21,12 +21,13 @@ dayjs.extend(relativeTime);
 const Test = lazy(() => import("./views/Test"));
 const AddLiquidity = lazy(() => import("./views/AddLiquidity"));
 const Swap = lazy(() => import("./views/Swap"));
+const Liquidity = lazy(() => import("./views/Liquidity"));
 
 function App() {
-  usePollBlockNumber()
-  useEagerConnect() // 自动连接有bug
+  usePollBlockNumber();
+  useEagerConnect(); // 自动连接有bug
   // usePollCoreFarmData()
-  useFetchAdditionalRates()
+  useFetchAdditionalRates();
   const [active, setActive] = useState(0);
   const { isXxs, isXs, isSm, isMd } = useMatchBreakpoints();
 
@@ -52,6 +53,7 @@ function App() {
               path="/add/:currencyIdA/:currencyIdB"
               element={<RedirectDuplicateTokenIds />}
             />
+            <Route path="/liquidity" element={<Liquidity />} />
           </Routes>
         </Suspense>
       </PageLayout>

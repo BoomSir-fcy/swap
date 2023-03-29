@@ -76,8 +76,8 @@ export const WETH = {
     ChainId.MATIC_TESTNET,
     '0x96d6565e7CA693c1424A151dc60Bd5CBa2200cD2',
     18,
-    'WETH',
-    'Wrapped WETH',
+    'WMATIC',
+    'Wrapped Matic',
   ),
 }
 

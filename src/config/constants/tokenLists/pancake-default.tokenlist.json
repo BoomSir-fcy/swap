@@ -304,7 +304,7 @@
     {
       "name": "WETH",
       "symbol": "WETH",
-      "address": "0x96d6565e7CA693c1424A151dc60Bd5CBa2200cD2",
+      "address": "0xb244438a70ae9e27ae5f48a6dd1c89f0cb2a70ff",
       "chainId": 80001,
       "decimals": 18,
       "logoURI": "https://aavegotchi.com/images/matokens/maWETH.svg"

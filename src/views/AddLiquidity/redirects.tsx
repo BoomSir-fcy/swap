@@ -6,7 +6,7 @@ interface RedirectProps {
   to: string;
 }
 
-const Redirect: React.FC<RedirectProps> = ({ to }) => {
+export const Redirect: React.FC<RedirectProps> = ({ to }) => {
   const navigate = useNavigate();
 
   useEffect(() => {

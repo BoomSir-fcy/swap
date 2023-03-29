@@ -14,6 +14,7 @@ import mint, { MintState } from "./mint/reducer";
 import tradingPoolReducer from "./tradingPool";
 import { BlockState, TradePoolsState } from "./types";
 import blockReducer from "./block";
+import burn, { BurnState } from "./burn/reducer";
 
 export interface State {
   test: any;
@@ -28,6 +29,7 @@ export interface State {
   mint: MintState;
   tradingPool: TradePoolsState;
   block: BlockState;
+  burn: BurnState;
 }
 const PERSISTED_KEYS: string[] = ["user", "transactions", "lists"];
 
@@ -44,6 +46,7 @@ export const store = configureStore({
     transactions,
     mint,
     lists,
+    burn,
   },
   devTools: process.env.NODE_ENV !== "production",
 });

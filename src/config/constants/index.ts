@@ -75,7 +75,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     BTCB,
     UST,
     ETH,
-    USDC,
+    USDC[ChainId.MAINNET],
   ],
   [ChainId.TESTNET]: [
     WETH[ChainId.TESTNET],
@@ -167,7 +167,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     BUSD[ChainId.TESTNET],
   ],
   [ChainId.MATIC_MAINNET]: [USDT[ChainId.MATIC_MAINNET]],
-  [ChainId.MATIC_TESTNET]: [USDT[ChainId.MATIC_TESTNET]],
+  [ChainId.MATIC_TESTNET]: [WETH[ChainId.MATIC_TESTNET], USDT[ChainId.MATIC_TESTNET]],
 };
 
 export const PINNED_PAIRS: {

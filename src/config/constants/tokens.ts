@@ -96,6 +96,13 @@ export const USDT: { [chainId: number]: Token } = {
     "USDT",
     "Tether USD"
   ),
+  [ChainId.MATIC_TESTNET]: new Token(
+    ChainId.MATIC_TESTNET,
+    "0x363B097cc4EbA999a6555427CB1b77d943FF43c1",
+    18,
+    "USDT",
+    "Tether USD"
+  ),
 };
 export const VAI: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
@@ -173,13 +180,22 @@ export const ETH = new Token(
   "ETH",
   "Binance-Peg Ethereum Token"
 );
-export const USDC = new Token(
-  ChainId.MAINNET,
-  "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
-  18,
-  "USDC",
-  "Binance-Peg USD Coin"
-);
+export const USDC: { [chainId: number]: Token } = {
+  [ChainId.MAINNET]: new Token(
+    ChainId.MAINNET,
+    "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+    18,
+    "USDC",
+    "Binance-Peg USD Coin"
+  ),
+  [ChainId.MATIC_TESTNET]: new Token(
+    ChainId.MATIC_TESTNET,
+    "0xCE8dca0BF7c5625A056B804A5e94F419480ba5a5",
+    18,
+    "USDC",
+    "Binance-Peg USD Coin"
+  ),
+};
 
 export const stableTokens = [USDC, DAI, USDT, BUSD];
 

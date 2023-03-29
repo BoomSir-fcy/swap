@@ -18,6 +18,7 @@ import ENS_ABI from '../config/abi/ens-registrar.json'
 import ENS_PUBLIC_RESOLVER_ABI from '../config/abi/ens-public-resolver.json'
 import WETH_ABI from '../config/abi/weth.json'
 import { MULTICALL_ABI, MULTICALL_NETWORKS } from 'config/constants/multicall'
+import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 
 /**
  * Helper hooks to get specific contracts (by ABI)
@@ -99,4 +100,8 @@ export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contrac
 export function useWETHContract(withSignerIfPossible?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
   return useContract(chainId && WETH[chainId] ? WETH[chainId].address : undefined, WETH_ABI, withSignerIfPossible)
+}
+
+export function usePairContract(pairAddress?: string, withSignerIfPossible?: boolean): Contract | null {
+  return useContract(pairAddress, IUniswapV2PairABI, withSignerIfPossible)
 }

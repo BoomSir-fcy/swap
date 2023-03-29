@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Settings from "./Settings";
 // import Transactions from './Transactions'
 import QuestionHelper from "../QuestionHelper";
+import Transactions from "./Transactions";
 
 interface Props {
   title: string;
@@ -60,8 +61,7 @@ const AppHeader: React.FC<Props> = ({
       {!noConfig && (
         <Flex>
           {hideSetting ? null : <Settings />}
-          Transactions
-          {/* <Transactions /> */}
+          <Transactions />
         </Flex>
       )}
     </AppHeaderContainer>

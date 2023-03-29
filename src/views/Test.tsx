@@ -53,7 +53,7 @@ const Test = () => {
         <Button
           type="primary"
           onClick={() => {
-            navigate(`/add`);
+            navigate(`/liquidity`);
           }}
         >
           添加流动性

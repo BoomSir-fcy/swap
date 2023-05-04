@@ -84,10 +84,9 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     USDT[ChainId.TESTNET],
   ],
   [ChainId.MATIC_TESTNET]: [
-    WETH[ChainId.MATIC_TESTNET],
     BUSD[ChainId.MATIC_TESTNET],
     DSG[ChainId.MATIC_TESTNET],
-    WETH[ChainId.MATIC_MAINNET],
+    WETH[ChainId.MATIC_TESTNET],
     VAI[ChainId.MATIC_TESTNET],
   ],
   [ChainId.MATIC_MAINNET]: [

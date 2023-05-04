@@ -31,13 +31,13 @@ export const CHAIN_ROUTER_ADDRESS_WHITE = {
 
 export const ROUTER_WHITE_TOKEN = [
   tokens.box.address[process.env.REACT_APP_CHAIN_ID] ||
-    tokens.box.address[ChainId.MAINNET],
+  tokens.box.address[ChainId.MAINNET],
   tokens.energy.address[process.env.REACT_APP_CHAIN_ID] ||
-    tokens.energy.address[ChainId.MAINNET],
+  tokens.energy.address[ChainId.MAINNET],
   tokens.spices.address[process.env.REACT_APP_CHAIN_ID] ||
-    tokens.spices.address[ChainId.MAINNET],
+  tokens.spices.address[ChainId.MAINNET],
   tokens.ore.address[process.env.REACT_APP_CHAIN_ID] ||
-    tokens.ore.address[ChainId.MAINNET],
+  tokens.ore.address[ChainId.MAINNET],
 ];
 export const ROUTER_ADDRESS =
   CHAIN_ROUTER_ADDRESS[process.env.REACT_APP_CHAIN_ID] ||
@@ -65,7 +65,7 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[];
 };
 
-// used to construct intermediary pairs for trading 用于构建交易的交易对
+// used to construct intermediary pairs for trading 用于构建路由交易的基础代币
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     WETH[ChainId.MAINNET],
@@ -84,6 +84,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     USDT[ChainId.TESTNET],
   ],
   [ChainId.MATIC_TESTNET]: [
+    WETH[ChainId.MATIC_TESTNET],
     BUSD[ChainId.MATIC_TESTNET],
     DSG[ChainId.MATIC_TESTNET],
     WETH[ChainId.MATIC_MAINNET],
